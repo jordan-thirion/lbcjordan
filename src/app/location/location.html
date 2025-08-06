@@ -1,0 +1,101 @@
+<section class="service-section">
+    <div class="service-section-text">
+        <div class="service-section-title">
+            <h1>Un service</h1>
+            <div class="circled-word">
+                <span>tout en un</span>
+                <img src="/img/orange-circle.svg" alt="">
+            </div>
+        </div>
+        <p>En passant sur un forfait de location, vous économisez en moyenne
+            <span class="underlined-word"> <!--TODO same line -->
+                <span>20% par an</span>
+                <img src="/img/short-underline.svg" alt="">
+            </span>
+        </p>
+        <button class="primary button-lg lg">Nous contacter</button>
+    </div>
+</section>
+
+<section class="sub-section location-page">
+    <div class="sub-cards">
+        <app-sub-card></app-sub-card>
+    </div>
+</section>
+
+<section class="buy-section">
+    <div class="buy-title">
+        <div class="buy-title-text">
+            <span>Vous préférez</span>
+            <div class="underlined-word">
+                <span>acheter</span>
+                <img src="/img/long-underline.svg" alt="">
+            </div>
+        </div>
+        <img src="/img/icons/arrow-down.png" alt="" />
+    </div>
+    <div class="buy-selection">
+        <div class="buy-product">
+            <img src="/img/50-reduction.svg" class="absolute-50" alt="" />
+            <img src="/img/left-photocopier.png" class="photocopier-img" alt="" />
+            <div class="buy-product-title">
+                <span>Achetez reconditionnées !</span>
+                <img src="/img/icons/change.svg" alt="" />
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="buy-product">
+            <img src="/img/claws-up.svg" class="absolute-claws-up" alt="" />
+            <img src="/img/claws.svg" class="absolute-claws" alt="" />
+            <img src="/img/right-photocopier.png" class="photocopier-img" alt="" />
+            <div class="buy-product-title">
+                <span>Matériel</span>
+                <div class="circled-word">
+                    <span>Neuf</span>
+                    <img src="/img/orange-circle.svg" alt="">
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section location-page">
+    <div class="location-contact-button">
+        <button class="primary button-lg lg">Nous contacter</button>
+    </div>
+    <div class="it-services">
+        <div class="it-services-infos">
+            <div class="it-services-title">
+                <span>Restez dans la course grâce à nos</span>
+                <div class="underlined-word">
+                    <span>services informatiques</span>
+                    <img src="/img/long-double-underline.svg" alt="">
+                </div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="primary button-lg lg">Nous contacter</button>
+        </div>
+        <div class="it-services-cards">
+            <app-item-card
+                [img]="'/img/numérisation.png'"
+                [title]="'Numérisation'"
+                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+            ></app-item-card>
+            <app-item-card
+                [img]="'/img/stockage.png'"
+                [title]="'Stockage'"
+                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+            ></app-item-card>
+            <app-item-card
+                [img]="'/img/interactive-tables.png'"
+                [title]="'Tableaux intéractifs'"
+                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+            ></app-item-card>
+        </div>
+    </div>
+    <app-contact></app-contact>
+</section>

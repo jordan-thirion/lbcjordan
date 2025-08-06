@@ -1,0 +1,356 @@
+// REPARATION SECTION
+.reparation-section {
+    height: 100%;
+    max-height: 750px;
+    padding: 140px 270px;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: 
+    linear-gradient(
+        to right,
+        white 30%,
+        transparent 100%
+    ),
+    url("/img/maintenance-img.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+
+    h1 {
+        font-size: 45px;
+        font-family: 'interstate', sans-serif;
+        font-weight: 600;
+        width: 100%;
+        max-width: 550px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    p {
+        font-family: 'futura', sans-serif;
+        font-size: 25px;
+        width: 100%;
+        max-width: 650px;
+        margin: 0;
+        margin-bottom: 26px;
+        line-height: 33px;
+    }
+    .primary {
+        margin-right: 32px;
+        font-family: 'interstate', sans-serif;
+        font-weight: 600;
+    }
+}
+
+// DIAGNOSTIC SECTION
+.diagnostic-section {
+    padding: 0 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    .diagnostic-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 60px;
+        margin-left: 60px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        .diagnostic-icon {
+            display: flex;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px #FF92488E;
+            margin-bottom: 18px;
+
+            img {
+                width: 80px;
+            }
+            &.green {
+                box-shadow: 0px 3px 10px #6ED55BA3;
+            }
+        }
+        span {
+            display: block;
+            font-family: 'interstate', sans-serif;
+            font-size: 45px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 26px;
+            line-height: 54px;
+        }
+        p {
+            margin: 0;
+            text-align: center;
+            font-family: 'futura', sans-serif;
+            font-size: 25px;
+            line-height: 33px;
+        }
+    }
+}
+
+// BRAND REPARATION SECTION
+.brand-reparation-section {
+    background-color: #FFEFE3;
+    margin: 0 140px 100px 140px;
+    padding: 28px 40px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        text-align: center;
+        font-family: 'futura', sans-serif;
+        font-size: 25px;
+        display: block;
+        margin-bottom: 36px;
+    }
+    .brand-reparation {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            margin: 0 8px 8px 8px;
+
+            &:first-child {
+                height: 36px;
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// CONTACT SECTION
+.contact-section {
+    .sub-offers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 260px;
+
+        .sub-offers-infos {
+            max-width: 650px;
+            width: 100%;
+            margin-right: 20px;
+
+            .sub-offers-title {
+                font-family: 'interstate', sans-serif;
+                font-weight: 600;
+                font-size: 45px;
+                margin-bottom: 20px;
+
+                .circled-word {
+                    margin-right: 14px;
+
+                    img {
+                        top: 15px;
+                    }
+                }
+            }
+            p {
+                margin: 0;
+                font-family: 'futura', sans-serif;
+                font-size: 25px;
+                line-height: 33px;
+                margin-bottom: 33px;
+            }
+        }
+        .sub-offers-cards {
+            display: flex;
+            align-items: flex-end;
+
+            .sub-card {
+                position: relative;
+                height: fit-content;
+                padding: 26px 56px 50px 56px;
+                box-shadow: 0px 3px 10px #8141004B;
+
+                .sub-infos {
+                    .sub-title {
+                        text-align: center;
+                    }
+                    img {
+                        width: 53px;
+                    }
+                }
+                .sub-card-better {
+                    position: absolute;
+                    top: -25px;
+                    left: -175px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #FF7722;
+                        border-radius: 10px;
+                        padding: 10px 40px;
+                        color: white;
+                        font-family: 'interstate', sans-serif;
+                        font-size: 25px;
+                        font-weight: 600;
+                        box-shadow: 0px 3px 10px #00000029;
+                    }
+                    img {
+                        max-width: 90px;
+                        margin-right: 24px;
+                        margin-top: 12px;
+                    }
+                }
+                &.active {
+                    z-index: 1;
+                    margin-bottom: 4px;
+                    margin-right: -15px;
+                    
+                    .sub-infos {
+                        img {
+                            width: 78px;
+                        }
+                    }
+                }
+                &.inactive {
+                    padding: 26px 90px 50px 90px;
+                    border: solid 5px #00000058;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 1700px) {
+    .reparation-section {
+        padding: 100px 150px;
+    }
+    .brand-reparation-section {
+        margin: 0 70px 100px 70px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .reparation-section {
+        padding: 100px 70px;
+    }
+    .diagnostic-section {
+        padding: 0 70px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .contact-section {
+        .sub-offers {
+            flex-direction: column;
+            align-items: center;
+
+            .sub-offers-infos {
+                max-width: 800px;
+                margin-bottom: 100px;
+
+                .sub-offers-title {
+                    text-align: center;
+
+                    .circled-word {
+                        margin: auto;
+                    }
+                }
+                .primary {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-section {
+        .sub-offers {
+            .sub-offers-cards {
+                .sub-card {
+                    .sub-card-better {
+                        right: -175px;
+                        left: unset;
+                        align-items: flex-start;
+
+                        img {
+                            transform: rotate(75deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .diagnostic-section {
+        flex-direction: column;
+        align-items: center;
+
+        .diagnostic-block {
+            margin: 0;
+            margin-bottom: 60px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .brand-reparation-section {
+        .brand-reparation {
+            justify-content: center;
+
+            img {
+                margin: 0 16px 16px 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        .sub-offers {
+            .sub-offers-infos {
+                margin-right: 0;
+            }
+            .sub-offers-cards {
+                flex-direction: column;
+                align-items: center;
+
+                .sub-card {
+                    &.active {
+                        margin-bottom: 60px;
+                    }
+                    .sub-card-better {
+                        top: -40px;
+                        right: unset;
+                        align-items: flex-end;
+
+                        img {
+                            transform: rotate(-100deg);
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

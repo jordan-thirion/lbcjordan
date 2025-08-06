@@ -1,0 +1,36 @@
+<header>
+    <div class="header-logo">
+        <img src="/img/logo-LBC.svg" alt="">
+    </div>
+    <div class="header-links">
+        <a routerLink="/maintenance">Réparation et maintenance</a>
+        <a routerLink="/location">Vente et locations</a>
+        <a routerLink="/">Numérisation GED</a>
+        <a routerLink="/">Stockage NAS</a>
+        <a routerLink="/">Tableaux intéractifs</a>
+        <button class="primary button-sm lg">Contact</button> <!-- TODO refaire classe -->
+    </div>
+</header>
+
+<!-- TODO revoir version mobile -->
+<!-- <header class="mobile-header {{if this.isOpen "open" ""}}">
+    <div class="header-links">
+        <LinkTo @route="maintenance">Réparation et maintenance</LinkTo>
+        <LinkTo @route="locations">Vente et locations</LinkTo>
+        <LinkTo @route="home">Numérisation GED</LinkTo>
+        <LinkTo @route="home">Stockage NAS</LinkTo>
+        <LinkTo @route="home">Tableaux intéractifs</LinkTo>
+    </div>
+    <div class="visible-buttons">
+        <div class="header-logo">
+            <LinkTo @route="home">
+                <img src="./img/logo-LBC.svg" alt="">
+            </LinkTo>
+        </div>
+        <div class="header-action-buttons">
+            <Button @class="primary xs" @buttonClass="button-xs" @text="Contact" @mailto={{true}} />
+            <Button @buttonClass="tertiary tel-button" @icon="orange-phone.svg" @tel={{true}} />
+            <Button {{on "click" this.toggleHeader}} @buttonClass="tertiary" @icon="hamburger.png" />
+        </div>
+    </div>
+</header> -->

@@ -1,0 +1,649 @@
+// NEARBY SECTION
+.nearby-section {
+    height: 100%;
+    max-height: 750px;
+    padding: 184px 270px;
+    margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: 
+    linear-gradient(
+        to right,
+        white 30%,
+        transparent 100%
+    ),
+    url("/img/home-img.jpeg");
+    background-repeat: no-repeat;
+    background-position: left;
+
+    .nearby-header {
+        font-family: 'futura', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+    h1 {
+        font-size: 45px;
+        font-family: 'interstate', sans-serif;
+        font-weight: 600;
+        width: 100%;
+        max-width: 550px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .circled-word {
+        margin-bottom: 26px;
+    }
+
+    p {
+        font-family: 'inter', sans-serif;
+        font-size: 25px;
+        width: 100%;
+        max-width: 650px;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .nearby-section-buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        .primary {
+            margin-right: 32px;
+            font-family: 'interstate', sans-serif;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .secondary {
+            font-family: 'interstate', sans-serif;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+// EXCLUSIVE SECTION
+.exclusive-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .exclusive-title, .underlined-word span {
+        display: flex;
+        font-size: 34px;
+        font-family: 'inter-bold', sans-serif;
+
+        .exclusive-word:first-child {
+            margin-right: 10px;
+        }
+        .exclusive-word:nth-child(3) {
+            margin-left: 10px;
+        }
+    }
+    .exclusive-title {
+        .underlined-word {
+            img {
+                bottom: -8px;
+            }
+        }
+    }
+    p {
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: center;
+        font-family: 'inter', sans-serif;
+        line-height: 21px;
+    }
+}
+
+// BRAND-SECTION
+.brand-section {
+    background-color: #FFEFE3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 16px 130px 16px;
+
+    .brand-images {
+        width: 100%;
+        max-width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 26px;
+
+        img {
+            margin-top: 12px;
+            margin-right: 12px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .brand-title {
+        font-family: 'interstate', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .brand-cities {
+        font-family: 'interstate', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+// RSE SECTION
+.RSE-section {
+    margin-top: -70px;
+    margin-bottom: 80px;
+    padding: 0 140px;
+
+    .RSE-infos-cards {
+        display: flex;
+        margin-bottom: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .RSE-infos-card {
+            position: relative;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0px 3px 10px #00000029;
+            border-radius: 10px;
+            margin: 0 8px;
+            margin-top: 70px;
+            padding: 100px 64px 44px 64px;
+            width: 20%;
+
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            .RSE-infos-icon {
+                position: absolute;
+                top: -50px;
+                height: 125px;
+                width: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0px 3px 10px #FF92488E;
+            }
+            .circled-word, .underlined-word {
+                margin-bottom: 12px;
+            }
+            .circled-word span, .underlined-word span, .clawed-word span {
+                font-size: 34px;
+                font-family: 'interstate', sans-serif;
+                font-weight: 600;
+            }
+            .RSE-infos-card-word {
+                display: flex;
+
+                .underlined-word {
+                    margin-right: 5px;
+
+                    img {
+                        bottom: 0;
+                    }
+                }
+                .clawed-word {
+                    position: relative;
+                    width: fit-content;
+                    display: flex;
+                    
+                    img {
+                        position: absolute;
+                        right: -40px;
+                    }
+                }
+            }
+            p {
+                margin: 0;
+                text-align: center;
+                line-height: 21px;
+            }
+        }
+    }
+    .RSE-infos {
+        display: flex;
+        flex-direction: row;
+
+        .cowork-img {
+            max-width: 1100px;
+            width: 70%;
+            max-height: 640px;
+            height: 100%;
+            margin-right: 16px;
+            border-radius: 10px;
+        }
+        .RSE-card {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #F4FFF9;
+            border: solid 2px #6ED55B;
+            border-radius: 10px;
+            padding: 20px 67px 34px 67px;
+            box-shadow: 0px 3px 10px #00000029;
+
+            .RSE-card-icon {
+                height: 150px;
+                width: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0px 3px 10px #6ED55B;
+                margin-bottom: 16px;
+            }
+            span {
+                font-size: 34px;
+                font-family: 'interstate', sans-serif;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            p {
+                margin: 0;
+                font-family: 'inter', sans-serif;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+// FORFAIT SECTION
+.forfait-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 250px;
+
+    .forfait-title {
+        display: flex;
+        font-family: 'inter-bold', sans-serif;
+        font-size: 34px;
+        margin-bottom: 8px;
+
+        span {
+            z-index: 1;
+        }
+        .circled-word {
+            span {
+                font-size: 34px;
+            }
+            img {
+                top: -10px;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: center;
+        font-family: 'inter', sans-serif;
+        line-height: 21px;
+    }
+
+    .orange-arrow {
+        position: absolute;
+        bottom: 0;
+        bottom: -100px;
+        right: 40%;
+    }
+}
+
+// SUB SECTION --> HOME PAGE
+.sub-section {
+    background-color: #FFEFE3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 218px;
+    padding: 0 100px;
+
+    .sub-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: -100px;
+        margin-bottom: 150px;
+
+        .sub-card {
+            margin: 0 26px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .sub-more {
+        background-color: white;
+        box-shadow: 0px 3px 10px #00000029;
+        border-radius: 10px;
+        padding: 25px 85px 25px 52px;
+        margin-bottom: -60px;
+
+        span {
+            display: block;
+            font-family: 'interstate', sans-serif;
+            font-weight: 600;
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .sub-infos {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            p {
+                font-family: 'futura', sans-serif;
+                margin: 0;
+                margin-right: 16px;
+                max-width: 530px;
+            }
+            .primary {
+                margin-bottom: -50px;
+
+                span {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// CONTACT SECTION
+.contact-section {
+    padding: 0 140px 45px 140px;
+    background-image: 
+    linear-gradient(
+        to bottom,
+        white 30%,
+        transparent 100%
+    ),
+    url("/img/contact-img.png");
+    background-repeat: no-repeat;
+    background-position: left;
+
+    .it-services {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 200px;
+
+        .it-services-infos {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 550px;
+            width: 100%;
+            margin-right: 60px;
+
+            .it-services-title, .underlined-word span {
+                font-family: 'interstate', sans-serif;
+                font-size: 34px;
+                font-weight: 600;
+            }
+            .it-services-title {
+                margin-bottom: 40px;
+            }
+            .underlined-word {
+                img {
+                    bottom: -10px;
+                }
+            }
+            p {
+                font-family: 'futura', sans-serif;
+                margin: 0;
+                margin-bottom: 40px;
+            }
+            .lg {
+                max-width: 460px;
+            }
+        }
+        .it-services-cards {
+            .it-card {
+                margin-bottom: 62px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 1700px) {
+    .nearby-section {
+        padding: 100px 150px;
+    }
+    .RSE-section {
+        padding: 0 70px;
+    }
+    .sub-section {
+        padding: 0 70px;
+    }
+    .contact-section {
+        padding: 0 70px 45px 70px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .sub-card {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nearby-section {
+        padding: 50px 75px;
+    }
+    .RSE-section {
+        .RSE-infos-cards {
+            .RSE-infos-card {
+                width: 30%;
+            }
+        }
+        .RSE-infos {
+            flex-direction: column;
+
+            .cowork-img {
+                width: 100%;
+            }
+            .RSE-card {
+                width: auto;
+                margin-top: 16px;
+            }
+        }
+    }
+    .sub-section {
+        .sub-cards {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 70px;
+            margin-bottom: 50px;
+
+            .sub-card {
+                order: 2;
+                margin: 0;
+                margin-bottom: 50px;
+
+                &.active {
+                    order: 1;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .sub-more {
+            padding: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-section {
+        .it-services {
+            flex-direction: column;
+            align-items: center;
+
+            .it-services-infos {
+                margin-right: 0;
+                margin-bottom: 50px;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nearby-section {
+        h1 {
+            font-size: 35px;
+        }
+        .circled-word {
+            span {
+                font-size: 35px;
+            }
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    .RSE-section {
+        .RSE-infos-cards {
+            flex-direction: column;
+
+            .RSE-infos-card {
+                width: fit-content;
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+    }
+    .forfait-section {
+        .forfait-title {
+            flex-direction: column;
+
+            span {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .sub-section {
+        .sub-more {
+            .sub-infos {
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    margin-right: 0;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nearby-section {
+        padding: 50px 45px;
+
+        .circled-word {
+            img {
+                transform: scale(1.3);
+            }
+        }
+        .nearby-section-buttons {
+            flex-wrap: wrap;
+        }
+    }
+    .exclusive-section {
+        padding: 0 45px;
+
+        .exclusive-title {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .RSE-section {
+        padding: 0 45px;
+
+        .RSE-infos-cards {
+            .RSE-infos-card {
+                padding: 34px;
+                margin-top: 30px;
+
+                .RSE-infos-icon {
+                    top: -60px;
+                    height: 85px;
+                    width: 100px;
+                    
+                    img {
+                        width: 60px;
+                    }
+                }
+                &:first-child {
+                    .RSE-infos-icon {
+                        img {
+                            width: 40px;
+                        }
+                    }
+                }
+                .underlined-word, .circled-word, .clawed-word {
+                    span {
+                        font-size: 26px;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .forfait-section {
+        padding: 0 45px;
+    }
+    .sub-section {
+        padding: 0 45px;
+
+        .sub-cards {
+            padding: 0 45px;
+        }
+    }
+    .contact-section {
+        padding: 0 45px 45px 45px;
+    }
+}
