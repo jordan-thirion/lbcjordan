@@ -9,5 +9,7 @@ import { AppModule } from '../app.module';
   styleUrls: ['./maintenance.scss']
 })
 export class MaintenanceComponent {
-
+  scrollTo(element: any): void {
+    (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }

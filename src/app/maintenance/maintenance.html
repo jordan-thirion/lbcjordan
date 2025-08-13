@@ -7,7 +7,7 @@
         <h1>Dépenser moins.</h1>
         <p>Votre réparateur local spécialisé dans le diagnostic, la réparation et la remise en service de vos matériels d’impression bureautique, 
             tous formats, toutes marques</p>
-        <button class="primary button-lg lg">Nous contacter</button>
+        <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
     </div>
 </section>
 
@@ -48,7 +48,7 @@
 </section>
 
 <section class="contact-section">
-    <div class="sub-offers">
+    <div class="sub-offers">         <!-- TODO: REVOIR -->
         <div class="sub-offers-infos">
             <div class="sub-offers-title">
                 <div class="circled-word">
@@ -58,9 +58,8 @@
                 <span>vaut mieux que guérir ...</span>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button class="primary button-lg lg">Nous contacter</button>
+            <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
         </div>
-        <!-- TODO: REVOIR -->
         <div class="sub-offers-cards">
             <div class="sub-card active">
                 <div class="sub-card-better">
@@ -117,5 +116,5 @@
             </div>
         </div>
     </div>
-    <app-contact></app-contact>
+    <app-contact id="contact"></app-contact>
 </section>

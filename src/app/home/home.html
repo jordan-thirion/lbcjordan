@@ -8,8 +8,8 @@
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div class="nearby-section-buttons">
-            <button class="primary button-lg lg">Contact</button>
-            <button class="secondary secondary-button-lg">En savoir plus</button> <!-- <RouterLink to="/maintenance"> -->
+            <button class="primary button-lg lg" (click)="scrollTo('contact')">Contact</button>
+            <button class="secondary secondary-button-lg" routerLink="/maintenance">En savoir plus</button>
         </div>
     </div> 
 </section>
@@ -116,7 +116,7 @@
         <span>Vous souhaitez plutôt acheter votre matériel ? C’est ici !</span>
         <div class="sub-infos">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button class="primary button-lg lg">Voir nos locations</button> <!-- <RouterLink to="/locations">Voir nos locations</RouterLink> -->
+            <a class="primary button-lg lg" routerLink="/location">Voir nos locations</a> <!-- pk routerlink bug? -->
         </div>
     </div>
 </section>
@@ -135,25 +135,25 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <button class="primary button-lg lg">Nous contacter</button>
+            <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
         </div>
         <div class="it-services-cards">
-            <app-item-card
+            <app-item-card id="numérisation-GED"
                 [img]="'/img/numérisation.png'"
                 [title]="'Numérisation'"
                 [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
             ></app-item-card>
-            <app-item-card
+            <app-item-card id="stockage-NAS"
                 [img]="'/img/stockage.png'"
                 [title]="'Stockage'"
                 [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
             ></app-item-card>
-            <app-item-card
+            <app-item-card id="tableaux-interactifs"
                 [img]="'/img/interactive-tables.png'"
                 [title]="'Tableaux intéractifs'"
                 [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
             ></app-item-card>
         </div>
     </div>
-    <app-contact></app-contact>
+    <app-contact id="contact"></app-contact>
 </section>

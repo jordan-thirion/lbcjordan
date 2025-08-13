@@ -13,7 +13,7 @@
                 <img src="/img/short-underline.svg" alt="">
             </span>
         </p>
-        <button class="primary button-lg lg">Nous contacter</button>
+        <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
     </div>
 </section>
 
@@ -62,9 +62,9 @@
 
 <section class="contact-section location-page">
     <div class="location-contact-button">
-        <button class="primary button-lg lg">Nous contacter</button>
+        <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
     </div>
-    <div class="it-services">
+    <div class="it-services"> <!-- TODO refaire -->
         <div class="it-services-infos">
             <div class="it-services-title">
                 <span>Restez dans la course grâce à nos</span>
@@ -77,25 +77,25 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <button class="primary button-lg lg">Nous contacter</button>
+            <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
         </div>
         <div class="it-services-cards">
-            <app-item-card
+            <app-item-card id="numérisation-GED"
                 [img]="'/img/numérisation.png'"
                 [title]="'Numérisation'"
                 [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
             ></app-item-card>
-            <app-item-card
+            <app-item-card id="stockage-NAS"
                 [img]="'/img/stockage.png'"
                 [title]="'Stockage'"
                 [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
             ></app-item-card>
-            <app-item-card
+            <app-item-card id="tableaux-interactifs"
                 [img]="'/img/interactive-tables.png'"
                 [title]="'Tableaux intéractifs'"
                 [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
             ></app-item-card>
         </div>
     </div>
-    <app-contact></app-contact>
+    <app-contact id="contact"></app-contact>
 </section>

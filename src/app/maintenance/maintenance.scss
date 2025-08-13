@@ -142,27 +142,28 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 260px;
+        margin: 0px 30px 260px 50px;
 
         .sub-offers-infos {
-            max-width: 650px;
+            max-width: 450px;
             width: 100%;
             margin-right: 20px;
 
             .sub-offers-title {
                 font-family: 'interstate', sans-serif;
                 font-weight: 600;
-                font-size: 45px;
+                font-size: 40px;
                 margin-bottom: 20px;
+                display: inline-flex;
 
                 .circled-word {
                     margin-right: 14px;
-
                     img {
                         top: 15px;
                     }
                 }
             }
+
             p {
                 margin: 0;
                 font-family: 'futura', sans-serif;
@@ -171,9 +172,11 @@
                 margin-bottom: 33px;
             }
         }
+
         .sub-offers-cards {
             display: flex;
             align-items: flex-end;
+            width: 50%; /*  */
 
             .sub-card {
                 position: relative;
@@ -189,6 +192,30 @@
                         width: 53px;
                     }
                 }
+
+    .sub-options { /* revoir */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .sub-option {
+            display: flex;
+            align-items: center;
+            font-family: 'futura', sans-serif;
+            margin-bottom: 16px;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+                
                 .sub-card-better {
                     position: absolute;
                     top: -25px;

@@ -9,5 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./header.scss']
 })
 export class HeaderComponent {
-
+  scrollTo(element: any): void {
+    (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }

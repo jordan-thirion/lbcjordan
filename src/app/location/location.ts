@@ -11,5 +11,7 @@ import { AppModule } from '../app.module';
   styleUrls: ['./location.scss']
 })
 export class LocationComponent {
-
+ scrollTo(element: any): void {
+    (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }
