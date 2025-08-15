@@ -22,6 +22,7 @@ footer {
             line-height: 25px;
         }
     }
+
     .footer-links {
         width: 100%;
         display: flex;
@@ -53,6 +54,13 @@ footer {
             }
         }
     }
+}
+
+.footer-down {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'futura', sans-serif;
+    width: 100%;
 }
 
 // RESPONSIVE
