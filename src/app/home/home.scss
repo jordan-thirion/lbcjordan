@@ -327,22 +327,10 @@
 
     .sub-cards {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        justify-content: center;
         width: 100%;
         margin-top: -100px;
         margin-bottom: 150px;
-
-        .sub-card {
-            margin: 0 26px;
-
-            &:first-child {
-                margin-left: 0;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
     }
 
     .sub-more {
