@@ -4,10 +4,11 @@ import { ContactComponent } from '../contact/contact';
 import { SubCardComponent } from '../sub-card/sub-card';
 import { AppModule } from '../app.module';
 import { RouterLink } from '@angular/router';
+import { FooterComponent } from '../footer/footer';
 
 @Component({
   selector: 'app-home',
-  imports: [AppModule, ItemCardComponent, ContactComponent, SubCardComponent, RouterLink],
+  imports: [AppModule, ItemCardComponent, ContactComponent, SubCardComponent, FooterComponent, RouterLink],
   templateUrl: './home.html',
   styleUrls: ['./home.scss']
 })

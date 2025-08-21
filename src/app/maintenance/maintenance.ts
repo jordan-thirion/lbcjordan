@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ContactComponent } from '../contact/contact';
 import { AppModule } from '../app.module';
+import { FooterComponent } from '../footer/footer';
 
 @Component({
   selector: 'app-maintenance',
-  imports: [AppModule, ContactComponent],
+  imports: [AppModule, ContactComponent, FooterComponent],
   templateUrl: './maintenance.html',
   styleUrls: ['./maintenance.scss']
 })
