@@ -1,7 +1,6 @@
 .footer {
     padding: 72px 140px;
     display: flex;
-    color: white;
 
     .footer-infos {
         display: flex;
@@ -57,13 +56,12 @@
     }
 }
 
-footer {
+.footer-bottom {
     text-align: center;
     font-size: 15px;
     font-family: 'futura', sans-serif;
     width: 100%;
     height: 100%;
-    color: black;
 }
 
 // RESPONSIVE
