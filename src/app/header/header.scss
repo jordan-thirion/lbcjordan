@@ -33,6 +33,8 @@ header {
 
         .primary {
             max-width: 80px;
+            font-family: 'interstate', sans-serif;
+            font-weight: 600;
         }
 
         a {
@@ -40,6 +42,7 @@ header {
             padding: 0 16px;
             font-family: 'inter-bold', sans-serif;
             font-size: 18px;
+            font-weight: bold;
             text-decoration: none;
             text-align: left;
             transition: all .2s ease;
