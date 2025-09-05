@@ -12,7 +12,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 140px;
+    padding: 16px 100px;
     transition: all .2s ease;
     box-shadow: 0px 3px 15px #00000029; // TODO Shadow effect
 
@@ -29,10 +29,10 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 800px;
+        max-width: 1000px;
 
         .primary {
-            max-width: 80px;
+            max-width: 120px;
             font-family: 'interstate', sans-serif;
             font-weight: 600;
         }
@@ -44,7 +44,7 @@ header {
             font-size: 18px;
             font-weight: bold;
             text-decoration: none;
-            text-align: left;
+            text-align: right;
             transition: all .2s ease;
 
             &:hover {

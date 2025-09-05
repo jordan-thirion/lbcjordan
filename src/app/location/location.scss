@@ -2,17 +2,17 @@
 .service-section {
     display: flex;
     align-items: center;
-    padding-left: 270px;
+    padding-left: 150px;
     padding-top: 215px;
     margin-bottom: 220px;
     background-image: url("/img/location-vente.png");
     background-position: right;
-    background-size: 65%;
+    background-size: 55%;
     background-repeat: no-repeat;
 
     .service-section-text {
         width: 100%;
-        max-width: 500px;
+        max-width: 650px;
 
         .service-section-title {
             display: flex;
@@ -38,8 +38,8 @@
         }
         p {
             font-family: 'futura';
-            font-size: 25px;
-            margin: 0;
+            font-size: 20px;
+            font-weight: 300;
             margin-bottom: 18px;
 
             span {
@@ -58,13 +58,16 @@
 
         .sub-cards {
             margin-bottom: 0;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: -100px;
         }
     }
 }
 
 // BUY SECTION
 .buy-section {
-    padding: 0 172px;
+    padding: 0 170px;
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
@@ -119,18 +122,18 @@
             }
             .absolute-claws-up {
                 position: absolute;
-                top: -50px;
+                top: -60px;
                 width: 70px;
+                right: 20%;
             }
             .absolute-claws {
                 position: absolute;
-                right: 20%;
+                right: -5%;
                 max-width: 100px;
                 width: 100%;
             }
             .photocopier-img {
-                width: 100%;
-                max-width: 715px;
+                max-width: 250px;
             }
             .buy-product-title {
                 display: flex;
@@ -138,7 +141,7 @@
                 font-weight: 600;
                 font-size: 45px;
                 margin-bottom: 12px;
-                width: 100%;
+                //width: 100%;
 
                 span {
                     margin-right: 20px;
@@ -191,7 +194,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                max-width: 550px;
+                max-width: 650px;
                 width: 100%;
                 margin-right: 60px;
 

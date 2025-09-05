@@ -3,42 +3,64 @@
     height: 100%;
     max-height: 750px;
     padding: 140px 270px;
-    margin-bottom: 48px;
     display: flex;
-    align-items: center;
-    justify-content: left;
-    background-image: 
-    linear-gradient(
-        to right,
-        white 30%,
-        transparent 100%
-    ),
-    url("/img/maintenance-img.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
+    justify-content: center;
 
-    h1 {
-        font-size: 45px;
-        font-family: 'interstate', sans-serif;
-        font-weight: 600;
-        width: 100%;
-        max-width: 550px;
-        margin-top: 0;
-        margin-bottom: 12px;
+    .reparation-section-text {
+        width: 45%;
+
+        h1 {
+            font-size: 45px;
+            font-family: 'interstate', sans-serif;
+            font-weight: 600;
+            width: 100%;
+            max-width: 550px;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        p {
+            font-family: 'futura', sans-serif;
+            font-size: 25px;
+            width: 100%;
+            max-width: 650px;
+            margin: 0;
+            margin-bottom: 26px;
+            line-height: 33px;
+        }
+        .primary {
+            font-family: 'interstate', sans-serif;
+            font-weight: 600;
+        }
     }
-    p {
-        font-family: 'futura', sans-serif;
-        font-size: 25px;
-        width: 100%;
-        max-width: 650px;
-        margin: 0;
-        margin-bottom: 26px;
-        line-height: 33px;
+
+    .vertical-line{
+        border-left: 2px solid #000;
+        display: inline-block;
+        height: 30vh;
+        margin: 0 20px;
     }
-    .primary {
-        font-family: 'interstate', sans-serif;
-        font-weight: 600;
+
+    .brand-reparation {
+        margin-left: 2vw;
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            margin: 0 8px 8px 8px;
+            width: 150px;
+
+            &:first-child {
+                height: 36px;
+                margin-left: 0;
+            }
+            &:last-child {
+                width: 80px;
+                margin-right: 0;
+            }
+        }
     }
 }
 
@@ -48,12 +70,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 70px;
 
     .diagnostic-block {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 30%;
         margin-right: 60px;
         margin-left: 60px;
 
@@ -97,44 +119,6 @@
     }
 }
 
-// BRAND REPARATION SECTION
-.brand-reparation-section {
-    background-color: #FFEFE3;
-    margin: 0 140px 100px 140px;
-    padding: 28px 40px 80px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    span {
-        text-align: center;
-        font-family: 'futura', sans-serif;
-        font-size: 25px;
-        display: block;
-        margin-bottom: 36px;
-    }
-    .brand-reparation {
-        width: 100%;
-        max-width: 1200px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-
-        img {
-            margin: 0 8px 8px 8px;
-
-            &:first-child {
-                height: 36px;
-                margin-left: 0;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-}
-
 // CONTACT SECTION
 .contact-section {
     padding: 0 100px 0px 100px; //ou 140px fct ecran
@@ -147,146 +131,7 @@
     url("/img/contact-img.png");
     background-repeat: no-repeat;
     background-position: left;
-
-    .sub-offers {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0px 30px 260px 50px;
-
-        .sub-offers-infos {
-            margin-top: 10vh;
-            max-width: 850px;
-            width: 100%;
-            margin-right: 20px;
-
-            .sub-offers-title {
-                font-family: 'interstate', sans-serif;
-                font-weight: 600;
-                font-size: 40px;
-                margin-bottom: 20px;
-                display: inline-flex;
-
-                .circled-word {
-                    margin-right: 14px;
-                    img {
-                        top: 15px;
-                    }
-                }
-            }
-
-            p {
-                margin: 0;
-                font-family: 'futura', sans-serif;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 33px;
-                margin-bottom: 33px;
-            }
-        }
-
-        .sub-offers-cards {
-            display: flex;
-            align-items: flex-end;
-            width: 40vw;
-
-            .sub-card {
-                position: relative;
-                height: fit-content;
-                text-align: center;
-                padding: 26px 56px 50px 56px;
-                box-shadow: 0px 3px 10px #8141004B;
-                font-weight: bold;
-
-                .sub-infos {
-                    font-family: 'interstate', sans-serif;
-                    font-size: 1.4vh; 
-                    margin-bottom: 3vh;;
-
-                    .sub-title{  
-                        font-size: 3vh; 
-                    }
-                    img {
-                        width: 53px;
-                    }
-                }
-
-                .sub-options { /* revoir */
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .sub-option {
-                        display: flex;
-                        align-items: center;
-                        font-family: 'interstate', sans-serif;
-                        font-size: 1.3vh;
-                        margin-top: 16px;
-            
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                        img {
-                            width: 16px;
-                            height: 16px;
-                            margin-right: 10px;
-                        }
-                    }
-                }
-                
-                .sub-card-better {
-                    position: absolute;
-                    top: -25px;
-                    left: -175px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-
-                    span {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: #FF7722;
-                        border-radius: 10px;
-                        padding: 10px 40px;
-                        color: white;
-                        font-family: 'interstate', sans-serif;
-                        font-size: 25px;
-                        font-weight: 600;
-                        box-shadow: 0px 3px 10px #00000029;
-                    }
-                    img {
-                        max-width: 90px;
-                        margin-right: 24px;
-                        margin-top: 12px;
-                    }
-                }
-                &.active {
-                    z-index: 1;
-                    margin-bottom: 4px;
-                    margin-right: -15px;
-                    background-color: white;
-                    border:#FF7722 solid 5px;
-                    border-radius: 5px;
-                    
-                    .sub-infos {
-                        img {
-                            width: 78px;
-                        }
-                        .sub-title {
-                            text-align: center;
-                            font-family: 'interstate', sans-serif;
-                        }
-                    }
-                }
-                &.inactive {
-                    padding: 26px 90px 50px 90px;
-                    border: solid 5px #00000058;
-                    border-radius: 5px;
-                }
-            }
-        }
-    }
+    margin-top: 20vh;
 }
 
 // RESPONSIVE

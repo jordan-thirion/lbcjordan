@@ -7,11 +7,10 @@
                 <img src="/img/orange-circle.svg" alt="">
             </div>
         </div>
-        <p>En passant sur un forfait de location, vous économisez en moyenne
-            <span class="underlined-word"> <!--TODO same line -->
-                <span>20% par an</span>
-                <img src="/img/short-underline.svg" alt="">
-            </span>
+        <p>
+            Prévisibilité des coûts : Vous connaissez le montant total à l'avance, aucun frais imprévus <br>
+            Simplicité : Un seul contrat, un seul interlocuteur, une équipe dédiée <br>
+            Plus de soucis : On s'occupe de tout, matériel, environnement, sécurité
         </p>
         <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
     </div>
@@ -36,18 +35,28 @@
     </div>
     <div class="buy-selection">
         <div class="buy-product">
-            <img src="/img/50-reduction.svg" class="absolute-50" alt="" />
-            <img src="/img/left-photocopier.png" class="photocopier-img" alt="" />
+            <div class="zone-img">
+                <img src="/img/50-reduction.svg" class="absolute-50" alt="" />
+                <img src="/img/machine-reconditionne1.png" class="photocopier-img" alt="" />
+                <img src="/img/machine-reconditionne2.png" class="photocopier-img" alt="" />
+            </div>
             <div class="buy-product-title">
                 <span>Achetez reconditionnées !</span>
-                <img src="/img/icons/change.svg" alt="" />
+                <!-- <img src="/img/icons/change.svg" alt="" /> -->
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Des tarifs maitrisés, gamme supérieure<br>
+                Un vrai geste pour l'environnement<br>
+                Fiabilité garantie par des professionnels
+            </p>
         </div>
         <div class="buy-product">
-            <img src="/img/claws-up.svg" class="absolute-claws-up" alt="" />
-            <img src="/img/claws.svg" class="absolute-claws" alt="" />
-            <img src="/img/right-photocopier.png" class="photocopier-img" alt="" />
+            <div class="zone-img">
+                <img src="/img/claws-up.svg" class="absolute-claws-up" alt="" />
+                <img src="/img/claws.svg" class="absolute-claws" alt="" />
+                <img src="/img/machine-neuve1.png" class="photocopier-img" alt="" />
+                <img src="/img/machine-neuve2.png" class="photocopier-img" alt="" />
+            </div>
             <div class="buy-product-title">
                 <span>Matériel</span>
                 <div class="circled-word">
@@ -55,12 +64,16 @@
                     <img src="/img/orange-circle.svg" alt="">
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Performances maximales, dernières technologies<br>
+                Garantie constructeur complète<br>
+                Durée de vie plus longue
+            </p>
         </div>
     </div>
 </section>
 
-<section class="contact-section location-page"> <!-- revoir le background image -->
+<section class="contact-section location-page">
     <div class="location-contact-button">
         <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
     </div>
@@ -83,21 +96,33 @@
             <app-item-card id="numérisation-GED"
                 [img]="'/img/numérisation.png'"
                 [title]="'Numérisation'"
-                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+                [subTitle]="'Optimisation de la Numérisation et des Flux Documentaires'"
+                [text]="'Nos copieurs multifonctions Sharp ne sont pas de simples périphériques d\'impression, ils sont les portes d\'entrée de votre transformation numérique. \n 
+                Leboncopieur configure et optimise vos solutions de numérisation pour une intégration parfaite dans votre écosystème informatique. \n 
+                Nous mettons en place des scans vers des partages réseaux sécurisés (SMB), des serveurs FTP ou SFTP, et intégrons directement vos documents numérisés dans vos plateformes cloud (Office 365, Google Drive) ou vos systèmes de gestion électronique de documents (GED). \n 
+                Que ce soit pour archiver, collaborer ou automatiser des processus, nous garantissons des flux de travail fluides, sécurisés et conformes aux exigences de votre entreprise, rendant vos informations accessibles où et quand vous en avez besoin.'"
             ></app-item-card>
             <app-item-card id="stockage-NAS"
                 [img]="'/img/stockage.png'"
                 [title]="'Stockage'"
-                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+                [subTitle]="'Solutions de Stockage Sécurisées et Intégrées'"
+                [text]="'La sécurité et l\'accessibilité de vos données sont primordiales. leboncopieur vous conseille et déploie des infrastructures de stockage robustes et performantes, adaptées à la taille et aux besoins de votre organisation. \n
+                Nos solutions s\'articulent autour de deux piliers : \n
+                • Stockage On-Premise avec Synology : Pour une maîtrise totale de vos données en interne, nous configurons et maintenons des NAS Synology, offrant des capacités de stockage évolutives, des sauvegardes automatisées, une haute disponibilité et une sécurité renforcée. \n
+                • Stockage Cloud Hybride et Messagerie : Nous intégrons vos environnements de messagerie professionnels (Microsoft 365, Gandi, OVH) et des solutions de stockage cloud pour une flexibilité et une collaboration sans faille. Cette approche hybride assure la continuité de votre activité, une accessibilité partout et à tout moment, et des stratégies de sauvegarde résilientes pour vos informations critiques.'"
             ></app-item-card>
             <app-item-card id="tableaux-interactifs"
                 [img]="'/img/interactive-tables.png'"
                 [title]="'Tableaux intéractifs'"
-                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+                [subTitle]="'Dynamisation de la Communication avec les Tableaux Dynamiques'"
+                [text]="'Donnez une nouvelle dimension à votre communication interne et externe avec nos solutions de tableaux dynamiques. \n
+                Qu\'il s\'agisse de salons professionnels, d\'espaces commerciaux, de salles de formation ou de zones d\'accueil, nous concevons et déployons des écrans interactifs et des affichages dynamiques qui captivent votre audience. Diffusez en temps réel des informations clés, des promotions, des plannings, des actualités ou des contenus multimédias engageants. \n 
+                Ces outils modernes et intuitifs vous permettent de renforcer votre image de marque, d\'informer efficacement vos collaborateurs et clients, et de créer une expérience mémorable, transformant chaque espace en un point de communication stratégique. \n
+                Ecrans toutes tailles jusqu\'à 85\' - Tous supports - Caméras intelligentes - Gestion multi-écrans - Full options'"
             ></app-item-card>
         </div>
     </div>
     <app-contact id="contact"></app-contact>
-    <app-footer style="color: white;"></app-footer>
 </section>
+
 

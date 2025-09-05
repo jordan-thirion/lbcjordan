@@ -9,35 +9,9 @@
             tous formats, toutes marques</p>
         <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
     </div>
-</section>
-
-<section class="diagnostic-section">
-    <div class="diagnostic-block">
-        <div class="diagnostic-icon">
-            <img src="/img/icons/diagnostic.png" alt="">
-        </div>
-        <span>Un diagnostic professionnel</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-    </div>
-    <div class="diagnostic-block">
-        <div class="diagnostic-icon">
-            <img src="/img/icons/tirelire.png" alt="">
-        </div>
-        <span>Moins de <br> dépense</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-    </div>
-    <div class="diagnostic-block">
-        <div class="diagnostic-icon green">
-            <img src="/img/icons/RSE.png" alt="">
-        </div>
-        <span>Un geste pour la planète</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-    </div>
-</section>
-
-<section class="brand-reparation-section">
-    <span>Votre réparateur toutes marques</span>
+    <span class="vertical-line"></span>
     <div class="brand-reparation">
+    <h1>Votre réparateur toutes marques</h1>
         <img src="/img/sharp.svg" alt="">
         <img src="/img/canon.png" alt="">
         <img src="/img/brother.svg" alt="">
@@ -47,75 +21,27 @@
     </div>
 </section>
 
-<section class="contact-section">
-    <div class="sub-offers">         
-        <div class="sub-offers-infos">
-            <div class="sub-offers-title">
-                <div class="circled-word">
-                    <span>Prévenir </span>
-                    <img src="/img/orange-circle.svg" alt=""> <!-- TODO: titre mal placé -->
-                </div>
-                <span> vaut mieux que guérir ...</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button class="primary button-lg lg" (click)="scrollTo('contact')">Contactez nous</button>
+<section class="diagnostic-section">
+    <div class="diagnostic-block">
+        <div class="diagnostic-icon">
+            <img src="/img/icons/diagnostic.png" alt="">
         </div>
-        <div class="sub-offers-cards">
-            <div class="sub-card active">
-                <div class="sub-card-better">
-                    <span>Sans engagement !</span>
-                    <img src="/img/arrow-up.svg" alt="">
-                </div>
-                <div class="sub-infos">
-                    <img src="/img/icons/computer-rocket.png" class="sub-icon" alt="">
-                    <div class="sub-title">Offre <br> Performance</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="sub-options">
-                    <div class="sub-option">
-                        <img src="/img/icons/check.png" alt="">
-                        <span>Lorem ipsum dolor sit</span>
-                    </div>
-                    <div class="sub-option">
-                        <img src="/img/icons/check.png" alt="">
-                        <span>Lorem ipsum dolor sit</span>
-                    </div>
-                    <div class="sub-option">
-                        <img src="/img/icons/check.png" alt="">
-                        <span>Lorem ipsum dolor sit</span>
-                    </div>
-                    <div class="sub-option">
-                        <img src="/img/icons/check.png" alt="">
-                        <span>Lorem ipsum dolor sit</span>
-                    </div>
-                </div>
-            </div>
-            <div class="sub-card inactive">
-                <div class="sub-infos">
-                    <img src="/img/icons/interrogation.png" class="sub-icon" alt="">
-                    <div class="sub-title">Sans <br> maintenance</div>
-                </div>
-                <div class="sub-options">
-                    <div class="sub-option">
-                        <img src="/img/icons/check.png" alt="">
-                        <span>Lorem ipsum dolor sit</span>
-                    </div>
-                    <div class="sub-option">
-                        <img src="/img/icons/check.png" alt="">
-                        <span>Lorem ipsum dolor sit</span>
-                    </div>
-                    <div class="sub-option">
-                        <img src="/img/icons/stop.png" alt="">
-                        <span>Lorem ipsum dolor sit</span>
-                    </div>
-                    <div class="sub-option">
-                        <img src="/img/icons/stop.png" alt="">
-                        <span>Lorem ipsum dolor sit</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <span>Un diagnostic professionnel</span>
     </div>
+    <div class="diagnostic-block">
+        <div class="diagnostic-icon">
+            <img src="/img/icons/tirelire.png" alt="">
+        </div>
+        <span>Moins de <br> dépense</span>
+    </div>
+    <div class="diagnostic-block">
+        <div class="diagnostic-icon green">
+            <img src="/img/icons/RSE.png" alt="">
+        </div>
+        <span>Un geste pour la planète</span>
+    </div>
+</section>
+
+<section class="contact-section">
     <app-contact style="top: -30px; position: relative;" id="contact"></app-contact>
 </section>
-<app-footer></app-footer>

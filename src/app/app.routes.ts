@@ -2,9 +2,11 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home';
 import { LocationComponent } from './location/location';
 import { MaintenanceComponent } from './maintenance/maintenance';
+import { ConditionComponent } from './condition/condition';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'location', component: LocationComponent },
-    { path: 'maintenance', component: MaintenanceComponent }
+    { path: 'maintenance', component: MaintenanceComponent },
+    { path: 'condition', component: ConditionComponent }
 ];

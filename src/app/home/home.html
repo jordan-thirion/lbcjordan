@@ -1,12 +1,16 @@
 <section class="nearby-section">
     <div class="nearby-section-text">
-        <span class="nearby-header">Impression - Numérisation - Ecran intéractif</span>
+        <span class="nearby-header">Impression - Numérisation - Datas - Ecrans</span>
         <h1>Votre service de réparation & location</h1>
         <div class="circled-word">
-            <span>à proximité</span>
+            <h1>à proximité</h1>
             <img src="/img/orange-circle.svg" alt="">
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>La société "LBC LE BON COPIEUR" est un acteur spécialisé dans la fourniture, maintenance et
+            dépannage de matériels d'impression professionnel (photocopieurs, imprimantes, multifonctions),
+            solutions de gestion de l'impression et dématérialisation, stockage DATA & sécurisation et
+            fourniture d’écrans dynamiques.
+        </p>
         <div class="nearby-section-buttons">
             <button class="primary button-lg lg" (click)="scrollTo('contact')">Contact</button>
             <button class="secondary secondary-button-lg" routerLink="/maintenance">En savoir plus</button>
@@ -28,13 +32,15 @@
 </section>
 
 <section class="brand-section">
-    <div class="brand-images">
-        <img src="/img/alpetudes.png" alt="">
-        <img src="/img/rgf.png" alt="">
-        <img src="/img/axa.svg" alt="">
-        <img src="/img/damac.svg" alt="">
-        <img src="/img/arti.png" alt="">
-        <img src="/img/acor.png" alt="">
+    <div class="carrousel-container">
+        <div class="carrousel-image">
+            <button (click)="prev()">&#10094;</button>
+            <img [src]="items[currentIndex]">
+            <img [src]="items[currentIndex+1]">
+            <img [src]="items[currentIndex+2]">
+            <img [src]="items[currentIndex+3]">
+            <button (click)="next()">&#10095;</button>
+        </div>
     </div>
     <span class="brand-title">Comme eux, faites le choix d’un réparateur de proximité</span>
     <span class="brand-cities">GRENOBLE - LYON - VALENCE - ANNECY - ALBERTVILLE</span>
@@ -50,17 +56,25 @@
                 <span>Proximité</span>
                 <img src="/img/orange-circle.svg" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ol class="liste">
+                <li>Interventions rapides à J, J+1 garanti</li>
+                <li>Joignable 8h00-20h00 - réponse immédiate - PAS DE TICKETS</li>
+                <li>Suivi à distance des équipements - Alertes - demandes de maintenance</li>
+            </ol>
         </div>
         <div class="RSE-infos-card">
             <div class="RSE-infos-icon">
                 <img src="/img/icons/money-down.png" alt="">
             </div>
             <div class="underlined-word">
-                <span>Amortissement</span>
+                <span>Maitrise des coûts</span>
                 <img src="/img/long-underline.svg" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ol class="liste">
+                <li>Tarifs maîtrisés, location = Gestion budgétaire</li>
+                <li>Forfaits garantis pour la durée du contrat</li>
+                <li>Durabilité des matériels, neufs ou reconditionnés</li>
+            </ol>
         </div>
         <div class="RSE-infos-card">
             <div class="RSE-infos-icon">
@@ -76,7 +90,11 @@
                     <img src="/img/claws.svg" alt="">
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ol class="liste">
+                <li>Pas d’intermédiaire Financier extérieur</li>
+                <li>Pas d’intermédiaire Technique extérieur</li>
+                <li>Vos données sont strictement protégées</li>
+            </ol>
         </div>
     </div>
     <div class="RSE-infos">
@@ -87,11 +105,23 @@
             </div>
             <span>RSE</span>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+                RSE : leboncopieur s'engage résolument dans une démarche de Responsabilité Sociétale
+                des Entreprises (RSE) en offrant une gamme complète de copieurs professionnels Sharp, alliant
+                performance et respect de l'environnement. Conscients des enjeux écologiques actuels, nous
+                proposons à nos clients des copieurs Sharp neufs intégrant les dernières innovations en matière
+                d'éco-énergie. Ces équipements sont sélectionnés pour leur faible consommation électrique,
+                leurs fonctionnalités d'économie de papier et leur conception favorisant la réduction de
+                l'empreinte carbone sur l'ensemble de leur cycle de vie.
+                En parallèle, notre offre de copieurs Sharp reconditionnés incarne notre engagement pour
+                l'économie circulaire : chaque appareil est minutieusement vérifié, nettoyé, mis à jour avec les
+                dernières versions logicielles et les pièces d'usure sont remplacées par des composants certifiés,
+                garantissant ainsi une seconde vie performante et fiable. En choisissant un copieur reconditionné,
+                nos clients contribuent directement à la réduction des déchets électroniques et à la diminution de
+                la demande en nouvelles ressources, tout en bénéficiant de la qualité et de la robustesse
+                reconnues de la marque Sharp.
+                Avec leboncopieur, optimisez votre gestion documentaire tout en agissant concrètement
+                pour un avenir plus durable.
+            </p> <!-- TODO en savoir plus -->
         </div>
     </div>
 </section>
@@ -100,12 +130,15 @@
     <div class="forfait-title">
         <span>Nos forfaits locations</span>
         <div class="circled-word">
-            <span>, sans engagement !</span>
+            <span>: Flexibilité et Responsabilité</span>
             <img src="/img/orange-circle.svg" alt="">
         </div>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua.</p>
     <img src="/img/arrow-down.svg" class="orange-arrow" alt="">
+    <p>Chez leboncopieur, nous comprenons que chaque entreprise a des besoins uniques. C'est pourquoi nous 
+        vous proposons des forfaits de location de copieurs Sharp flexibles, avec ou sans engagement, pour
+        s'adapter parfaitement à votre activité, tout en intégrant nos valeurs RSE. Découvrez nos trois offres,
+        conçues pour optimiser votre gestion documentaire et maîtriser vos coûts.</p>
 </section>
 
 <section class="sub-section">
@@ -115,13 +148,12 @@
     <div class="sub-more">
         <span>Vous souhaitez plutôt acheter votre matériel ? C’est ici !</span>
         <div class="sub-infos">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="primary button-lg lg" routerLink="/location">Voir nos locations</a> <!-- pk routerlink bug? -->
+            <a class="primary button-lg lg" routerLink="/location">Voir nos locations</a> <!-- TODO: pk routerlink bug? -->
         </div>
     </div>
 </section>
 
-<section class="contact-section"> <!-- TODO: Décalage étrange -->
+<section class="contact-section">
     <div class="it-services">
         <div class="it-services-infos">
             <div class="it-services-title">
@@ -131,9 +163,14 @@
                     <img src="/img/long-double-underline.svg" alt="">
                 </div>
             </div>
+            <h4>Le Numérique au Cœur de Votre Performance avec leboncopieur</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Au-delà de l'excellence de nos solutions d'impression Sharp, leboncopieur vous accompagne dans la
+                transformation numérique de votre entreprise. Nous intégrons les technologies les plus pertinentes pour
+                optimiser vos flux de travail, sécuriser vos données et dynamiser votre communication. Notre expertise
+                s'étend de la gestion intelligente de vos documents numérisés et de votre stockage, jusqu'à la mise en
+                place de tableaux dynamiques innovants, pour une productivité accrue et une communication fluide, quel
+                que soit votre secteur d'activité.
             </p>
             <button class="primary button-lg lg" (click)="scrollTo('contact')">Nous contacter</button>
         </div>
@@ -141,20 +178,31 @@
             <app-item-card id="numérisation-GED"
                 [img]="'/img/numérisation.png'"
                 [title]="'Numérisation'"
-                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+                [subTitle]="'Optimisation de la Numérisation et des Flux Documentaires'"
+                [text]="'Nos copieurs multifonctions Sharp ne sont pas de simples périphériques d\'impression, ils sont les portes d\'entrée de votre transformation numérique. \n 
+                Leboncopieur configure et optimise vos solutions de numérisation pour une intégration parfaite dans votre écosystème informatique. \n 
+                Nous mettons en place des scans vers des partages réseaux sécurisés (SMB), des serveurs FTP ou SFTP, et intégrons directement vos documents numérisés dans vos plateformes cloud (Office 365, Google Drive) ou vos systèmes de gestion électronique de documents (GED). \n 
+                Que ce soit pour archiver, collaborer ou automatiser des processus, nous garantissons des flux de travail fluides, sécurisés et conformes aux exigences de votre entreprise, rendant vos informations accessibles où et quand vous en avez besoin.'"
             ></app-item-card>
             <app-item-card id="stockage-NAS"
                 [img]="'/img/stockage.png'"
                 [title]="'Stockage'"
-                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+                [subTitle]="'Solutions de Stockage Sécurisées et Intégrées'"
+                [text]="'La sécurité et l\'accessibilité de vos données sont primordiales. leboncopieur vous conseille et déploie des infrastructures de stockage robustes et performantes, adaptées à la taille et aux besoins de votre organisation. \n
+                Nos solutions s\'articulent autour de deux piliers : \n
+                • Stockage On-Premise avec Synology : Pour une maîtrise totale de vos données en interne, nous configurons et maintenons des NAS Synology, offrant des capacités de stockage évolutives, des sauvegardes automatisées, une haute disponibilité et une sécurité renforcée. \n
+                • Stockage Cloud Hybride et Messagerie : Nous intégrons vos environnements de messagerie professionnels (Microsoft 365, Gandi, OVH) et des solutions de stockage cloud pour une flexibilité et une collaboration sans faille. Cette approche hybride assure la continuité de votre activité, une accessibilité partout et à tout moment, et des stratégies de sauvegarde résilientes pour vos informations critiques.'"
             ></app-item-card>
             <app-item-card id="tableaux-interactifs"
                 [img]="'/img/interactive-tables.png'"
                 [title]="'Tableaux intéractifs'"
-                [text]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'"
+                [subTitle]="'Dynamisation de la Communication avec les Tableaux Dynamiques'"
+                [text]="'Donnez une nouvelle dimension à votre communication interne et externe avec nos solutions de tableaux dynamiques. \n
+                Qu\'il s\'agisse de salons professionnels, d\'espaces commerciaux, de salles de formation ou de zones d\'accueil, nous concevons et déployons des écrans interactifs et des affichages dynamiques qui captivent votre audience. Diffusez en temps réel des informations clés, des promotions, des plannings, des actualités ou des contenus multimédias engageants. \n 
+                Ces outils modernes et intuitifs vous permettent de renforcer votre image de marque, d\'informer efficacement vos collaborateurs et clients, et de créer une expérience mémorable, transformant chaque espace en un point de communication stratégique. \n
+                Ecrans toutes tailles jusqu\'à 85\' - Tous supports - Caméras intelligentes - Gestion multi-écrans - Full options'"
             ></app-item-card>
         </div>
     </div>
-    <app-contact id="contact"></app-contact>
+    <app-contact id="contact"></app-contact> <!-- TODO recaler dans le cadre photo -->
 </section>
-<app-footer></app-footer>

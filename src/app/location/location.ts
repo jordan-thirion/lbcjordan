@@ -3,11 +3,10 @@ import { ItemCardComponent } from '../item-card/item-card';
 import { ContactComponent } from '../contact/contact';
 import { SubCardComponent } from '../sub-card/sub-card';
 import { AppModule } from '../app.module';
-import { FooterComponent } from '../footer/footer';
 
 @Component({
   selector: 'app-location',
-  imports: [AppModule, ItemCardComponent, ContactComponent, SubCardComponent, FooterComponent],
+  imports: [AppModule, ItemCardComponent, ContactComponent, SubCardComponent],
   templateUrl: './location.html',
   styleUrls: ['./location.scss']
 })

@@ -10,5 +10,6 @@ import { AppModule } from '../app.module';
 export class ItemCardComponent {
   @Input() img: string = '';
   @Input() title: string = '';
+  @Input() subTitle: string = '';
   @Input() text: string = '';
 }

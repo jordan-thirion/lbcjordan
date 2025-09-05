@@ -1,0 +1,9 @@
+.condition-container {
+    padding: 100px 270px;
+    font-family: 'futura', sans-serif;
+    line-height: 3vh;
+
+    h1{
+        text-align: center;
+    }
+}
