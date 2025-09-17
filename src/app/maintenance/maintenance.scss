@@ -252,3 +252,71 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .reparation-section {
+        flex-direction: column;
+        padding: 70px 20px;
+        text-align: center;
+
+        button {
+            margin: auto;
+        }
+
+        .reparation-section-text {
+            width: 100%;
+
+            h1 {
+                font-size: 36px;
+                max-width: 100%;
+            }
+            p {
+                font-size: 20px;
+                max-width: 100%;
+            }
+        }
+        .vertical-line{
+            display: none;
+        }
+        .brand-reparation {
+            margin: 40px 0 0 0;
+            width: 100%;
+            justify-content: center;
+
+            img {
+                width: 120px;
+
+                &:first-child {
+                    height: 30px;
+                }
+                &:last-child {
+                    width: 70px;
+                }
+            }
+        }
+    }
+    .diagnostic-section {
+        padding: 0 20px;
+
+        .diagnostic-block {
+            max-width: 100%;
+
+            .diagnostic-icon {
+                img {
+                    width: 60px;
+                }
+            }
+            span {
+                font-size: 36px;
+                line-height: 44px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+    .contact-section {
+        padding: 0 20px 100px 20px;
+    }
+}

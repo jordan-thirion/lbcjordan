@@ -1,7 +1,6 @@
 footer {
     padding: 36px 70px;
     display: flex;
-    //margin-top: -100px;
 
     .footer-infos {
         display: flex;
@@ -94,5 +93,23 @@ footer {
 @media screen and (max-width: 650px) {
     footer {
         padding-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+
+        .footer-list {
+            margin-bottom: 20px;
+            width: 100%;
+
+            .footer-list-title {
+                margin-bottom: 5px !important;
+            }
+        }
     }
 }

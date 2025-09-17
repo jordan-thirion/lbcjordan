@@ -1,4 +1,4 @@
-<header>
+<header class="desktop-header">
     <div class="header-logo">
         <a routerLink="/"><img src="/img/logo-LBC.svg" alt=""></a>
     </div>
@@ -13,22 +13,16 @@
 </header>
 
 <!-- TODO revoir version mobile -->
-<header class="mobile-header"> <!-- {{if this.isOpen "open" ""}}" -->
-    <div class="header-links">
-        <a routerLink="/maintenance">Réparation et maintenance</a>
-        <a routerLink="/location">Vente et locations</a>
-        <a (click)="scrollTo('numérisation-GED')">Numérisation-GED Solutions Facturation</a>
-        <a (click)="scrollTo('stockage-NAS')">Stockage DATA & Sécurisation</a>
-        <a (click)="scrollTo('tableaux-interactifs')">Ecrans Affichage Dynamiques</a>
-    </div>
+<header class="mobile-header">
     <div class="visible-buttons">
-        <div class="header-logo">
-            <a routerLink="/"><img src="/img/logo-LBC.svg" alt=""></a>
-        </div>
         <div class="header-action-buttons">
-            <button class="primary xs button-xs"> Contact </button>
-            <button class="tertiary tel-button" icon="orange-phone.svg"></button> <!-- TODO add tel -->
-            <button class="tertiary" icon="hamburger.png"></button> <!-- TODO add toggle menu -->
+            <button class="primary xs button-xs" (click)="scrollTo('contact')"> Contact </button>
+            <a href="tel:0618934872" class="tertiary tel-button"><img src="/img/icons/orange-phone.svg" /></a>
+            <select class="tertiary dropdown"> <!-- <img src="/img/icons/hamburger.png" /> -->
+                <option routerLink="/maintenance">Réparation et maintenance</option>
+                <option routerLink="/location">Vente et locations</option>
+                <option routerLink="">Accueil</option>
+            </select>
         </div>
     </div>
 </header>

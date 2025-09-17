@@ -11,7 +11,7 @@
     padding: 8px 70px 8px 0px;
     
     img {
-        width: 7vw;
+        border-radius: 5px;
         min-width: 100px;
         transform: scale(2.2);
     }
@@ -88,8 +88,13 @@
 
 @media screen and (max-width: 576px) {
     .it-card {
-        padding: 16px;
         flex-direction: column;
+        margin-top: 40px;
+
+        img {
+            width: 50px;
+            margin-left: 20%;
+        }
 
         .it-card-text {
             margin-top: 30px;

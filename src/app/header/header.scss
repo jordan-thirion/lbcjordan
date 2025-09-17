@@ -1,12 +1,5 @@
-// HEADER STICKY
-.ember-view#ember170 {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
 // HEADER
-header {
+.desktop-header {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -85,47 +78,23 @@ header {
 }
 
 // MOBILE HEADER
-header {
-    &.mobile-header {
+.mobile-header {
         display: none;
-        padding: 26px 34px 0 34px;
+        padding-top: 14px;
         background-color: #FFEFE3;
         box-shadow: 0px 3px 15px #00000058;
-
-        &.open {
-            .header-links {
-                height: 400px;
-            }
-        }
-
-        .header-links {
-            height: 0;
-            flex-direction: column;
-            align-items: flex-start;
-            transition: all .2s ease;
-
-            a {
-                font-size: 22px;
-                margin-bottom: 40px;
-
-                &:last-child {
-                    margin-bottom: 70px;
-                }
-            }
-        }
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;
     
         .visible-buttons {
             display: flex;
-            justify-content: space-between;
             width: 100%;
             background-color: #FFEFE3;
             padding-bottom: 26px;
             opacity: .99;
-
-            .header-logo {
-                margin-bottom: 0;
-                margin-right: 18px;
-            }
+            justify-content: center;
 
             .header-action-buttons {
                 display: flex;
@@ -137,6 +106,19 @@ header {
                 .tertiary {
                     margin-right: 16px;
                 }
+                .dropdown {
+                    margin-right: 16px;
+                    width: 200px;
+                    height: 40px;
+                    padding: 8px;
+                    background-color: white;
+                    border-radius: 10%;
+                    border: none;
+                    box-shadow: 0px 3px 10px #FF92488E;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
                 :last-child {
                     .tertiary {
                         margin-right: 0;
@@ -144,18 +126,18 @@ header {
                 }
             }
         }
-    }
 }
+
 
 // RESPONSIVE
 @media screen and (max-width: 1500px) {
-    header {
+    .desktop-header {
         padding: 16px 32px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    header {
+    .desktop-header {
         padding: 16px;
 
         .header-links {
@@ -181,7 +163,7 @@ header {
 }
 
 @media screen and (max-width: 992px) {
-    header {
+    .desktop-header {
         .header-links {
             a {
                 font-size: 15px;
@@ -199,7 +181,7 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    header {
+    .desktop-header {
         flex-direction: column;
 
         .header-logo {
@@ -211,15 +193,16 @@ header {
 
 @media screen and (max-width: 650px) {
     // HEADER STICKY
-    .ember-view#ember170 {
+    .mobile-header {
         position: fixed;
         top: unset;
         bottom: 0;
         z-index: 999;
         width: 100%;
+        display: flex;
     }
 
-    header {
+    .desktop-header {
         display: none;
 
         &.mobile-header {

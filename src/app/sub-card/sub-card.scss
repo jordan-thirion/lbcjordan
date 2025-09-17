@@ -78,3 +78,15 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .sub-cards-row {
+        display: block;
+        justify-content: center;
+    }
+ 
+    .sub-card {
+        width: 55vw;
+        margin: 0 auto 30px auto;
+    }
+}

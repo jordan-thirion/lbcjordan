@@ -16,26 +16,26 @@
     </div>
     <div class="white-block"></div>
     <div class="contact-form">
-        <form>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="contact-name-mail">
                 <div class="input-with-legend">
                     <span>Votre nom</span>
-                    <input required="" id="ember195" class="ember-text-field ember-view" type="text">
+                    <input required formControlName="name" class="ember-text-field ember-view" type="text">
                 </div>
                 <div class="input-with-legend">
                     <span>Votre mail</span>
-                    <input required="" id="ember196" class="ember-text-field ember-view" type="email">
+                    <input required formControlName="email" class="ember-text-field ember-view" type="email">
                 </div>
             </div>
             <div class="input-with-legend">
                 <span>Objet</span>
-                <input required="" placeholder="Ex : Demande de dépannage" id="ember197" class="ember-text-field ember-view" type="text">
+                <input required formControlName="object" placeholder="Ex : Demande de dépannage" class="ember-text-field ember-view" type="text">
             </div>
             <div class="input-with-legend">
                 <span>Votre message</span>
-                <textarea name="contact-textarea" rows="5" placeholder="Ecrivez ici" required=""></textarea>
+                <textarea required formControlName="message" name="contact-textarea" rows="5" placeholder="Ecrivez ici"></textarea>
             </div>
-            <button type="submit" class="primary button-lg lg" icon="submit.png">Envoyer</button>
+            <button type="submit" class="primary button-lg lg" [disabled]="contactForm.invalid">Envoyer</button>
         </form>
     </div>
 </div>

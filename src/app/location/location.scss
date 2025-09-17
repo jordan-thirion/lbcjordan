@@ -197,6 +197,7 @@
                 max-width: 650px;
                 width: 100%;
                 margin-right: 60px;
+                color: white;
 
                 .it-services-title, .underlined-word span {
                     font-family: 'interstate', sans-serif;
@@ -221,7 +222,7 @@
                 }
             }
             .it-services-cards {
-                width: 80%;
+                width: fit-content;
             }
         }
     }
@@ -303,6 +304,23 @@
             }
         }
     }
+    .contact-section {
+        &.location-page {
+        padding: 50px 15px 45px 15px;
+
+        .it-services {
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            position: static;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
