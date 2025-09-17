@@ -18,11 +18,17 @@
         <div class="header-action-buttons">
             <button class="primary xs button-xs" (click)="scrollTo('contact')"> Contact </button>
             <a href="tel:0618934872" class="tertiary tel-button"><img src="/img/icons/orange-phone.svg" /></a>
-            <select class="tertiary dropdown"> <!-- <img src="/img/icons/hamburger.png" /> -->
+            <!-- <select class="tertiary dropdown">
                 <option routerLink="/maintenance">Réparation et maintenance</option>
                 <option routerLink="/location">Vente et locations</option>
                 <option routerLink="">Accueil</option>
-            </select>
+            </select> -->
+            <button class="tertiary dropdown" matButton [matMenuTriggerFor]="aboveMenu"><img src="/img/icons/hamburger.png" /></button>
+            <mat-menu class="links" #aboveMenu="matMenu" yPosition="above">
+                <a class="link" mat-menu-item routerLink="/maintenance">Réparation et maintenance</a>
+                <a mat-menu-item routerLink="/location">Vente et locations</a>
+                <a mat-menu-item routerLink="">Accueil</a>
+            </mat-menu>
         </div>
     </div>
 </header>

@@ -108,7 +108,7 @@
                 }
                 .dropdown {
                     margin-right: 16px;
-                    width: 200px;
+                    width: 40px;
                     height: 40px;
                     padding: 8px;
                     background-color: white;
@@ -123,7 +123,7 @@
                     .tertiary {
                         margin-right: 0;
                     }
-                }
+                }                
             }
         }
 }
@@ -200,6 +200,11 @@
         z-index: 999;
         width: 100%;
         display: flex;
+    }
+
+    ::ng-deep .links{      
+        background-color: #FFEFE3 !important;  
+        color: #FF7722;
     }
 
     .desktop-header {
